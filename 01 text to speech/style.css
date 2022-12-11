@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to right, rgb(227, 2, 243), rgb(0, 170, 255));
+}
+
+.wrapper {
+    font-family: 'Rubik Vinyl', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+
+.wrapper label {
+    font-size: 30px;
+}
+
+.wrapper textarea {
+    font-size: 20px;
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 12px;
+    outline: none;
+    padding: 8px;
+}
+
+.wrapper button {
+    font-size: 25px;
+    border-radius: 15px;
+    border: 0;
+    padding: 10px 20px;
+    background: cornflowerblue;
+    color: #fff;
+    cursor: pointer;
+}
+
+.wrapper button:active {
+    transform: scale(0.93);
+}
