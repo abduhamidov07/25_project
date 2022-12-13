@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.total {
+    background-color: #000;
+}    
+
+.random {
+    width: 500px;
+}
+
+.random h1 {
+    font-size: 70px;
+}
+
+button:active {
+    transform: scale(0.96);
+}
