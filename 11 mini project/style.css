@@ -13,3 +13,8 @@
     height: 100px;
     background-color: red;
 }
+
+button:active {
+    transform: scale(0.95);
+    transition: .1s linear;
+}

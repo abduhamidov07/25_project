@@ -12,36 +12,43 @@
 </head>
 
 <body>
-    <div class="container d-flex justify-content-end align-items-center vh-100">
-        <div class="shape">
-
+    <div class="d-flex align-items-center vh-100 position-relative">
+        <div class="d-flex justify-content-end" style="margin: auto">
+           <div class="shape"></div>
         </div>
-        <div class="d-flex flex-column justify-content-center">
+        <div class="d-flex flex-column justify-content-center position-absolute" style="right: 90px;">
             <div class="input-group my-5 item">
                 <span class="input-group-text">Width</span>
-                <input type="text" class="form-control" id="width" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" class="form-control" id="width" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
             </div>
             <div class="input-group mb-5 item">
                 <span class="input-group-text">Heigth</span>
-                <input type="text" class="form-control" id="height" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" class="form-control" id="height" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
             </div>
             <div class="input-group mb-5 item">
                 <span class="input-group-text">Border radius</span>
-                <input type="text" class="form-control" id="borderRadius" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" class="form-control" id="borderRadius" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
             </div>
             <select class="form-select item mb-5" id="colors" aria-label=" example">
-                <option selected>Select color</option>
+                <option value="color" selected>Select color</option>
                 <option value="red">Red</option>
                 <option value="yellow">Yellow</option>
                 <option value="green">Green</option>
                 <option value="blue">Blue</option>
                 <option value="black">Black</option>
                 <option value="gray">Gray</option>
-              </select>
-              <button type="button" class="btn btn-primary px-4 fs-5" id="submit-btn">Ok</button>
+                <option value="pink">Pink</option>
+            </select>
+            <div class="d-flex gap-2">
+                <button type="button" class="btn btn-primary px-2 fs-5 w-50" id="submit-btn">Ok</button>
+                <button type="reset" class="btn btn-danger px-2 fs-5 w-50" id="reset-btn">Reset</button>
+            </div>
         </div>
     </div>
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
