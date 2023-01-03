@@ -12,14 +12,12 @@ submitBtnEl.addEventListener("click", function () {
     shapeEl.style.height = "100px";
     shapeEl.style.borderRadius = "0px";
     shapeEl.style.background = "red";
+  } else {
+    shapeEl.style.width = `${widthEl.value}px`;
+    shapeEl.style.height = `${heightEl.value}px`;
+    shapeEl.style.borderRadius = `${borderRadiusEl.value}px`;
+    shapeEl.style.background = colorEl.value;
   }
-});
-
-submitBtnEl.addEventListener("click", function () {
-  shapeEl.style.width = `${widthEl.value}px`;
-  shapeEl.style.height = `${heightEl.value}px`;
-  shapeEl.style.borderRadius = `${borderRadiusEl.value}px`;
-  shapeEl.style.background = colorEl.value;
 });
 
 resetBtnEl.addEventListener("click", function () {
