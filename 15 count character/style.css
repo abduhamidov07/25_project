@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0A1930;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.wrapper textarea {
+    font-size: 25px;
+    padding: 12px;
+    background: #172B46;
+    color: antiquewhite;
+    width: 65%;
+    height: 60%;
+}
+
+.wrapper h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: aquamarine;
+}
