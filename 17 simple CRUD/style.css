@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+p,
+h3 {
+  margin: 0;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #caf8fa;
+  width: 600px;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.post i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.func {
+  display: flex;
+  gap: 18px;
+}
+
+#textarea {
+  border: 1.2px solid #000;
+  border-radius: 12px;
+  outline: none;
+  background: transparent;
+}
+
