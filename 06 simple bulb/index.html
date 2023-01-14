@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple bulb</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <div class="toggle-container">
+            <span>
+                <h4>off</h4>
+                <input type="checkbox" name="toggle" id="toggle" onclick="changeImage()" unchecked />
+                <label for="toggle">
+                    <div class="ball"></div>
+                </label>
+                <h4>on</h4>
+            </span>
+        </div>
+        <div class="bulb">
+            <img id="lamp-img" src="pic_bulboff.gif" alt="lamp">
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
