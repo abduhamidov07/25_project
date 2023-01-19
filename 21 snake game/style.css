@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background: rgb(242, 242, 242);
+  font-family: cursive;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  margin: 2% auto;
+  box-shadow: 1px 3px 36px 5px rgba(0, 0, 0, 0.75);
+  border: 5px solid red;
+}
+
+select {
+    padding: 5px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #555;
+}
+
