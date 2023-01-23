@@ -1,0 +1,44 @@
+body {
+    background: rgb(251,212,223);
+    background: linear-gradient(90deg, rgba(251,212,223,1) 0%, rgba(220,247,250,1) 100%);
+}
+
+.site-title h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.main input {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+#qr-generation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main input:first-child {
+   width: 300px;
+}
+
+.main input:last-child {
+    background-color: springgreen;
+    cursor: pointer;
+}
+
+.main input:last-child:active {
+    transform: scale(.98);
+}
