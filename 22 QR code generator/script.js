@@ -1,12 +1,12 @@
 let qrContentInput = document.getElementById("qr-content");
-let qrGenerationForm = document.getElementById("qr-generation-form");
 let qrCode;
 
+// Generate QR code 
 function generateQrCode(qrContent) {
   return new QRCode("qr-code", {
     text: qrContent,
-    width: 256,
-    height: 256,
+    width: 260,
+    height: 260,
     colorDark: "#000000",
     colorLight: "#ffffff",
     correctLevel: QRCode.CorrectLevel.H,
@@ -14,13 +14,12 @@ function generateQrCode(qrContent) {
 }
 
 // Event listener for form submit event
-qrGenerationForm.addEventListener("submit", function (event) {
+qrContentInput.addEventListener("input", function (event) {
   event.preventDefault();
   let qrContent = qrContentInput.value;
   if (qrCode == null) {
     qrCode = generateQrCode(qrContent);
-  } 
-   else {
+  } else {
     qrCode.makeCode(qrContent);
   }
 });

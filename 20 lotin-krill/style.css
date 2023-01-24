@@ -36,7 +36,7 @@ button:active {
   padding: 0 65px;
   background-color: cadetblue;
   color: #fff;
-  height: 45px;
+  padding: 15px 30px;
 }
 
 .container {
@@ -48,7 +48,7 @@ button:active {
   height: calc(100vh - 45px);
 }
 
-.container textarea {
+.form textarea {
   border: 1px solid #000;
   border-radius: 15px;
   padding: 8px;
@@ -63,8 +63,12 @@ button:active {
 }
 
 /* MEDIA */
-@media (max-width: 600px) {
-  textarea {
-    width: 100%;
+@media (max-width: 780px) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form textarea {
+    width: 90%;
   }
 }

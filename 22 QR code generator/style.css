@@ -22,23 +22,6 @@ body {
   outline: none;
 }
 
-#qr-generation-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
 .main input:first-child {
    width: 300px;
-}
-
-.main input:last-child {
-    background-color: springgreen;
-    cursor: pointer;
-}
-
-.main input:last-child:active {
-    transform: scale(.98);
 }
