@@ -5,12 +5,39 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+  background-color: #fa8bff;
+  background: linear-gradient(
+    225deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  ) no-repeat;
+  height: 100vh;
 }
 
 p,
 h3 {
   margin: 0;
+}
+
+#posts {
+  max-height: 400px;
+  overflow-y: auto;
+  width: 640px;
+}
+
+#posts::-webkit-scrollbar {
+  width: 20px;
+}
+
+#posts::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #8CC3EB;
+}
+
+#posts::-webkit-scrollbar-thumb {
+  background-color: #CAF8FA;
+  border-radius: 10px;
 }
 
 .post {
@@ -40,4 +67,3 @@ h3 {
   outline: none;
   background: transparent;
 }
-
