@@ -1,0 +1,18 @@
+.page-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+}
+
+.page-back {
+  width: 120%;
+  height: 120%;
+  left: -10%;
+  top: -10%;
+  position: absolute;
+  background-image: url("https://c1.staticflickr.com/2/1687/26305003116_d17242618f_b.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
