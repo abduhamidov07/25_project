@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.card {
+  width: 316px;
+  height: fit-content;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.calendar-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #efefef;
+}
+
+.calendar-toolbar > .current-month {
+  font-size: 20px;
+  font-weight: bold;
+  color: #19181a;
+}
+
+.calendar-toolbar > [class$="month-btn"] {
+  width: 40px;
+  aspect-ratio: 1;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: #19181a;
+  background: #f8f7fa;
+  border: none;
+  border-radius: 15px;
+}
+
+.weekdays,
+.calendar-days {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 18px;
+}
+.weekdays {
+  padding-top: 12px;
+}
+.calendar-days {
+  padding-bottom: 12px;
+}
+
+.weekday-name,
+[class$="-day"] {
+  width: 40px;
+  height: 40px;
+  color: #19181a;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.weekday-name {
+  color: #19181a;
+  font-weight: 700;
+}
+
+.current-day {
+  background-color: #0294E8;
+  color: #f8f7fa;
+  border-radius: 15px;
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.padding-day {
+  color: #a5a5a5;
+  user-select: none;
+}
+
+.calendar-toolbar > [class$="month-btn"]:hover,
+.month-day:hover,
+.btn:hover {
+  border-radius: 15px;
+  background-color: #0294E8;
+  color: #fff;
+  transition: 0.1s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.goto-buttons {
+  border-top: 1px solid #efefef;
+  padding-block: 18px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  background: #f8f7fa;
+  border: none;
+  border-radius: 15px;
+  padding: 11px 13px;
+  color: #19181a;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
