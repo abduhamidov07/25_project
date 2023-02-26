@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+body {
+  margin: 0;
+}
+
+.sidebar {
+  background-color: #e8ecf3;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 900px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.container h4 {
+  position: fixed;
+  top: 30px;
+  font-size: 14px;
+  background-color: #111a36;
+  color: #e8ecf3;
+  font-weight: 400;
+  padding: 12px 30px;
+  border-radius: 30px;
+  box-shadow: 0 6px 10px #111a3630;
+  transform: scale(0);
+  z-index: 999;
+}
+
+h4 strong {
+  text-transform: uppercase;
+}
+
+.container h2 {
+  font-size: 26px;
+}
+
+.container .palettes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.palettes .palette {
+  position: relative;
+  background-color: #fff;
+  padding: 8px;
+  padding-bottom: 12px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.palette .color {
+  width: 140px;
+  height: 190px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.palette h3 {
+  color: #95979b;
+  text-transform: uppercase;
+}
+
+.palette.active,
+.palette:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 20px -8px #424d6430;
+}
+
+.palette.active h3,
+.palette:hover h3 {
+  color: #2c2c2c;
+}
+
+.btn {
+  width: 300px;
+  max-width: 300px;
+  padding: 14px;
+  background-color: #8977dd;
+  border: 1px solid #8977dd;
+  font-family: inherit;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #6e5eb4;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    margin: 50px 0;
+    height: auto;
+  }
+}
