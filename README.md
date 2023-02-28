@@ -1,4 +1,4 @@
 # 25_project
 
-25 day 25 project
+30 day 30 project
 
